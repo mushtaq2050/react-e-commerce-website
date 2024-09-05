@@ -1,0 +1,133 @@
+
+
+.offers-cars-containerss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-data-card-container{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 6rem;
+    grid-column-gap: 15rem;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid gray;
+    align-items: center;
+    width: 21rem;
+    height: 29rem;
+    border-radius: 1rem;
+}
+.item-card img{
+    width: 17rem;
+}
+.item-tittle{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    width: 15rem;
+}
+.item-description{
+    font-size: 1.2rem;
+    width: 20rem;
+}
+.btns-offers-container{
+    display: flex;
+    gap: 1rem;
+}
+.item-price-offers{
+    background-color: #007bff;
+    width: max-content;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.cart-h{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #4b1b78;;
+    margin-top: 3rem;
+}
+.cart-ht{
+    display: none;
+}
+.cart-h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #007bff;
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: .5rem;
+}
+.cart-btnss{
+    text-align: center;
+}
+.cart-btn{
+    padding: 1rem .8rem;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    border: none;
+    color: white;
+    background-color: #4b1b78;
+    cursor: pointer;
+    /* text-align: center; */
+}
+.cart-btn:hover{
+background-color: #007bff;
+cursor: pointer;
+
+}
+.clearss-btn{
+    display: none;
+}
+.clears-btn{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.clear-btn{
+    padding: 1rem 1.6rem;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+.clear-btn:hover{
+background-color: transparent;
+color: #007bff;
+border: 1px solid gray;
+}
+
+
+@media screen and (max-width:1050px) {
+    .offer-data-card-container{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 6rem;
+        grid-column-gap: 15rem;
+    }
+}
+@media screen and (max-width:1050px) {
+    .offer-data-card-container{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 6rem;
+        grid-column-gap: 15rem;
+    }
+}

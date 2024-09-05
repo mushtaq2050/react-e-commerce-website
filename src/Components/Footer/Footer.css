@@ -1,0 +1,91 @@
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.footer-logo-container img{
+width: 13rem;
+}
+.footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.logos-container{
+    display: flex;
+    gap: 1rem;
+}
+.footer-lorem{
+    color: var(--color-gray-100);
+    font-size: 1.1rem;
+  width: 30rem;
+}
+.logo-1{
+    height: 4rem;
+    width: 4rem;
+    background: var(--color-gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.logo-1 svg{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.grid-contaiber{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+}
+.grid-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.grid-heading{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-gray-100);
+}
+.grid-text{
+    font-size:1.2rem ;
+    color: var(--color-gray-100);
+}
+.footer-copy-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding: 2rem 0rem;
+}
+.footer-hr{
+    margin-top: 6rem;
+    width: 100w;
+}
+.reserves{
+  color: var(--color-gray-100);
+  font-size: 1.1rem;
+}
+.e-commerce-2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:white;
+}
+
+
+@media screen and (max-width:650px) {
+    .footer-container{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        padding-top: 6rem;
+        gap: 6rem;
+    }
+}

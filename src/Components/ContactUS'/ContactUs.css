@@ -1,0 +1,229 @@
+
+
+.bg-contact-us{
+  background-color: #f9d0d1;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 4.9rem);
+}
+.bg-contact-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bg-contact-lets{
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #4b1b78;
+}
+.bg-contact-pp{
+  font-size: 1.2rem;
+  color: #212529;
+  width: 35rem;
+}
+.bg-contact-img img{
+  width: 45rem;
+}
+
+  .form-contact-us-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    align-items: center;
+  }
+  .contact-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 60rem;
+  }
+  .form-containersss{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  h1 {
+    color: #4b1b78;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color:black;
+  }
+  
+  .input-contatcss,
+  textarea {
+    width: 55rem;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid gray;
+    outline: none;
+  }
+  input::placeholder{
+    font-size: 1.3rem;
+  }
+  
+  #message::placeholder{
+          font-size: 1.3rem;
+  }
+  #message{
+    padding-top: 1.5rem;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 1rem 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 300ms ease-in;
+    border: 1px solid transparent;
+    font-size: 1.3rem;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: #212529;
+    border-color:gray ;
+  }
+  .contact-logo{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0056b3;
+    color: white;
+    transition: all 300ms ease-in;
+    border: 1px solid transparent;
+  }
+  .contact-logo:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: #0056b3;
+    color:#0056b3 ;
+  }
+  .contact-logo svg{
+    font-size: 3rem;
+  }
+  .form-connect-us{
+    color: #4b1b78;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .contact-logos-container{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  .explore-us-contact{
+    padding: 1rem 1.5rem;
+    color: white;
+    border: none;
+    background-color: #4b1b78;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    transition: all 300ms ease-in;
+    border: 1px solid transparent;
+  }
+  .explore-us-contact:hover{
+          background-color: transparent;
+          color: #4b1b78;
+          border-color: gray ;
+  }
+
+
+
+
+ /* Typewriter.css */
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* Cursor effect */
+  animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: transparent; }
+}
+
+
+
+
+@media screen and (max-width:650px) {
+  .bg-contact-us{
+    background-color: #f9d0d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 4.9rem);
+  }
+}
+
+
+
+@media screen and (max-width:1050px){
+  .form-contact-us-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width:650px) {
+  .contact-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    width: 45rem;
+  }
+  .input-contatcss,
+  textarea {
+    width: 40rem;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid gray;
+    outline: none;
+  }
+}
+
+

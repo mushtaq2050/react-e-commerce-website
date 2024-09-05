@@ -1,0 +1,215 @@
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 4rem; */
+    height: calc(100vh - 6.7rem);
+    
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+.welcome-hero{
+    font-size: 3.1rem;
+    font-weight: bolder;
+    width: 54rem;
+
+}
+.hero-p-text{
+    font-size: 1.4rem;
+    width: 40rem;
+}
+.hero-btn{
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    border: none;
+    color: white;
+    background-color: #4b1b78;
+    transition: all 400ms ease-in-out;
+}
+.hero-btn:hover{
+    cursor: pointer;
+    background-color:#007bff;
+    color:white ;
+}
+.hero-img img{
+    width: 20rem;
+}
+.hero-p-text-hero-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.views-stats-containers{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.viewsstats{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: .1rem;
+}
+.product{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+.count{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+
+.btn {
+    --color: #4b1b78;
+    --color2: rgb(10, 25, 30);
+    padding: 0.9rem 1rem;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    border: 1px solid #4b1b78;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    border-color:#f89cab;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+    border-color: #f89cab;
+   }
+   
+   .btn:hover {
+    color: white;
+    border-color:#f89cab;
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+    border-color: var(--color);
+    border-color: #f89cab;
+   }
+
+
+.typewriter {
+    /* display: inline-block; */
+    white-space:wrap;
+    overflow: hidden;
+    border-right: 3px solid gray; /* Cursor effect */
+    animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: gray; }
+  }
+
+  @media screen and (max-width:950px){
+    .welcome-hero{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        width: 51rem;
+    }
+    .product{
+        font-size: 1.6rem;
+        font-weight: bolder;
+        color:white;
+    }
+    .count{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+  }
+
+
+  @media screen and (max-width:770px) {
+    .hero-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        /* gap: 1rem; */
+        /* height: calc(100vh - 6.7rem); */
+        height: 100vh;
+        
+    }
+    .hero-btnss{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        color: white;
+    }
+  }
+  @media screen and (max-width:430px) {
+    .welcome-hero{
+        font-size: 2.7rem;
+        font-weight: bolder;
+        width: 50rem;
+    
+    }
+    .hero-img img{
+        width: 25rem;
+    }
+  }
+  @media screen and (max-width:390px) {
+    .hero-img img{
+        width: 20rem;
+    }
+    .welcome-hero{
+        font-size: 2.4rem;
+        font-weight: bolder;
+        width: 49rem;
+    }
+  }

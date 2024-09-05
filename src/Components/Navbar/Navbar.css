@@ -1,0 +1,139 @@
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem 3rem;
+    align-items: center;
+    background-color: #f9ece6;
+    color: #514f4f;
+    height: 4.7rem;
+}
+.menu-container{
+    display: flex;
+    gap: 3.5rem;
+}
+.menu-containers-a{
+ display: flex;
+ gap: 3.5rem;
+ font-size: 1.7rem;
+ align-items: center;
+}
+.menu-containers-a a{
+    color: #514f4f;
+}
+
+.logo-container img{
+    width: 3rem;
+}
+.btn-navbar{
+    padding: .8rem 2rem;
+    font-size: 1.7rem;
+    border-radius: .4rem;
+    border: none;
+    color: white;
+    background-color: #4b1b78;
+    transition: all 300ms ease-in;
+}
+.btn-navbar:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#4b1b78 ;
+}
+.e-commerce{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #4b1b78;
+}
+
+ul a:hover{
+    color:#963939 ;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #963939;
+    top: -.6rem;
+    left: 2.5rem;
+    /* margin-top: 3rem; */
+}
+.close-men{
+    color: #514f4f;
+    font-size: 4rem;
+    position: absolute;
+    right: 3rem;
+    top: 1.7rem;
+    display: none;
+}
+.open-men{
+    color: black;
+    font-weight: bolder;
+    font-size: 4rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+    
+}
+.log-btn{
+    padding: .9rem 1.9rem;
+}
+@media screen and (max-width:700px) {
+    .menu-container{
+        position: absolute;
+        top: -30rem;
+        width: 100vw;
+        height: 30rem;
+        background-color: #fef9f4;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: all 300ms ease-in-out;
+    }
+    .menu-container.actave{
+        top: 0;
+    }
+    .menu-containers-a{
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      color: #514f4f;
+      align-items: center;
+      justify-content: center;
+      padding-top: 3rem;
+      padding-bottom: .4rem;
+    }
+    .menu-containers-a a{
+        color: #514f4f;
+    }
+    .close-men{
+        display: block;
+    }
+    .open-men{
+ display: block;
+    }
+    .active{
+        position: relative;
+    }
+    .active::after{
+        content: '';
+        display: block;
+        height: 0rem;
+        width: 0rem;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #963939;
+        top: -.6rem;
+        left: 2.5rem;
+        /* margin-top: 3rem; */
+    }
+  
+}

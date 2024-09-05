@@ -1,0 +1,69 @@
+
+
+.customer-container{
+    margin-top: 13rem;
+}
+.client-h2{
+    padding-bottom: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#343a40 ;
+}
+.slider-img{
+    border-radius: 50%;
+    width: 10rem;
+}
+.my-swiper{
+    width: 90%;
+    height: 29rem;
+    padding-top: 10rem;
+
+}
+.img-star-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.name-star-container{
+    display: flex;
+    flex-direction: column;
+}
+.slider-name{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #343a40;
+}
+.star-container{
+    display: flex;
+    gap: .3rem;
+}
+.star-container svg{
+    font-size: 1.5rem;
+    color: gold;
+}
+.slider-detail{
+    font-size: 1.3rem;
+    color: var(--dark);
+    width: 45rem;
+}
+.swipar-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+    /* width: 48rem; */
+    border-radius: 4.5rem 0rem 4.5rem 0rem;
+    padding: 2rem;
+background-color: #f9ece6;
+   
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    .slider-detail{
+        font-size: 1.1rem;
+        color: var(--dark);
+        width: 41rem;
+    }
+}

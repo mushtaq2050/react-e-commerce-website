@@ -1,0 +1,206 @@
+
+.bg-about-container{
+    background-color: #e6a0a2 ;
+}
+.bg-about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 4.7rem);
+}
+.about-bg-shp-t{
+    font-size: 1.3rem;
+    padding: 1rem 1.7rem;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    background-color: #4b1b78 ;
+    transition: all 300ms ease-in;
+}
+.about-bg-shp-t:hover{
+   background-color:  #007bff;
+   color: white;
+}
+
+.about-bg-img-container img{
+    width: 23rem;
+}
+.bg-about-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.about-bg-us{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #4b1b78;
+}
+.about-bg-text{
+    font-size: 1.2rem;
+    color: #212529;
+    width: 35rem;
+}
+
+
+.mission{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 5rem; */
+}
+.png-mission img{
+    width: 36rem;
+}
+.misshion-h{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #343a40;
+    padding-bottom: 2rem;
+}
+.mission-p{
+    font-size: 1.3rem;
+    width: 40rem;
+}
+.mission-btn{
+    padding: 1rem 1.4rem;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    background-color:  #4b1b78;
+    transition: all 300ms ease-in-out;
+    border: 1px solid transparent;
+}
+.mission-btn:hover{
+    background-color: transparent;
+    border-color: gray;
+    color:#4b1b78 ;
+}
+.btn-p{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.mission-2{
+    margin-top: 5rem;
+}
+
+
+
+
+
+.Button-1 {
+    position: relative;
+    display: inline-block;
+    /* margin: 15px; */
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #109dbd;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #109dbd;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #109dbd;
+  }
+  
+  .Button-1:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #109dbd;
+    border-color: #109dbd;
+  }
+  .Button-1:active {
+    transform: scale(0.9);
+  }
+
+
+/* From Uiverse.io by Gaurav-WebDev */ 
+.button {
+    height: 3.8rem;
+    width: 11rem;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #4b1b78;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    color:#4b1b78;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 500;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #4b1b78;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 1rem;
+    width: 1rem;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #4b1b78;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
+
+.typewriter {
+    /* display: inline-block; */
+    white-space:wrap;
+    overflow: hidden;
+    border-right: 3px solid gray; /* Cursor effect */
+    animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: gray; }
+  }
+
+@media screen and (max-width:850px){
+    .bg-about-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: calc(100vh - 4.7rem);
+    }
+    .mission-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+    .mission-2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
